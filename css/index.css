@@ -1,0 +1,414 @@
+:root{
+    --main-color:#d36116;
+}
+body{
+    margin: 0;padding: 0;
+    background-color: #f1f1f1;
+}
+.Head-navbar{
+  background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+.Head-navbar .logo{
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 120px;
+    color: #fff;
+    padding-top: 15px;
+background-color: var(--main-color);
+font-weight: bold;
+}
+.Head-navbar .logo i{
+    margin-right: 4px;
+}
+.Head-navbar .logo:hover{
+    background-color: rgb(210, 207, 207);
+    color: black;
+}
+.Head-navbar .links{
+    position: relative;
+width: 100%;
+}
+.Head-navbar .links ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 0;padding: 0;
+    width: 100%;
+}
+.Head-navbar .links ul li{
+    margin-right: 0;padding: 0;
+    
+}
+.Head-navbar .links .aLinks{
+    text-decoration: none;
+    color: black;
+    display: flex;
+width: 100px;
+height: 50px;
+align-items: center;
+justify-content: center;
+background-color: #fff;
+
+}
+.Head-navbar .links ul li:last-child{
+ position:absolute ;
+    right: 0;
+    
+}
+.Head-navbar .links ul li:last-child a{
+    width: 120px;
+    background-color: lightgray;
+}
+.Head-navbar .links .aLinks:hover{
+    background-color:rgb(100, 100, 100);
+}
+
+/* end header navbar */
+.container{
+    margin: auto auto 50px auto;
+    width: 1270px;
+
+
+}
+
+.landing-page{
+background-image: url("../img/hotel.jpg");
+width: 100%;
+min-height: 100vh;
+background-size: cover;
+}
+
+.landing-page .person-info{
+    position: absolute;
+    background-color: white;
+   
+    border: 1px solid ;
+   
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 10%;
+    
+
+}
+.landing-page .person-info .hotel-logo{
+  display: flex;
+    position: relative;
+background-color: var(--main-color);
+min-height: 50px;
+font-size: x-large;
+font-weight: bold;
+align-items: center;
+justify-content: center;
+width: 100%;
+color: white;
+
+}
+.landing-page .person-info .hotel-logo i{
+    margin-right: 10px;
+}
+.landing-page .person-info .data {
+min-height: 200px;
+width: 100%;
+}
+.data .check{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.data .check .check-in,
+.data .check .check-out{
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+}
+ input{
+
+border: 1px solid #ccc;
+border-radius: 2px;
+margin-top: 8px;
+    height: 30px;
+    width: 250px;
+    background-color: #fff;
+    color:black;
+    padding-left: 10px;
+   
+}
+.data .check input:focus{
+    border-color:black ;
+}
+.data .check input:last-child{
+    
+    margin-right: 20px;   
+    }
+
+    .data .check i{
+        margin-right: 5px;
+    }
+
+form .search{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: lightslategray ;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 30px;
+    padding: 2px;
+    cursor: pointer;
+ }
+ form .search:hover{
+    background-color: #ccc;
+ }
+
+ /* rooms start */
+.rooms-info{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.rooms-info i{
+    margin-right: 5px;
+}
+.rooms-info .check-in,
+.rooms-info .check-out{
+    display: flex;
+flex-direction: column;
+    margin-right: 20px;
+}
+.rooms-info .search input{
+    background-color: black;
+ color: #ccc;
+ width: 120px;
+ cursor: pointer;
+}
+ 
+
+.room-cards{
+width: 100%;
+display: flex;
+flex-direction: row;
+margin-top: 30px;
+}
+.room-cards .room {
+    width: 33%;
+    background-color: white;
+    margin-right: 15px;
+}
+.room-cards .room .room-info{
+    margin-left: 15px;
+}
+.room-cards .room img{
+    width: 100%;
+}
+.room-cards .room h2{
+    margin-top: 0;
+}
+.room-info input{
+ width: calc(100% - 15px);
+  background-color: black;
+  color: #ccc;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body input:hover{
+background-color: #ccc;
+color: black;
+}
+.room-info i{
+    margin-right: 2px;
+}
+.room-info .price{
+    opacity: 0.60;
+}
+/* end room */
+/* about start */
+.about{
+   display: flex; 
+   width: 100%;
+}
+.about .about-info{
+    margin-right: 1%;
+    width: 49%;
+}
+.about-info h2,
+.about-info p{
+    margin:10px 0;
+}
+.about .about-img img{
+width: 100%;
+}
+
+.about .about-info i{
+   margin-right: 2px;
+}
+
+.container .contact-info{
+    display: flex;
+    width: 100%;
+text-align: center;
+margin: 32px 0;
+}
+.contact-info span{
+    width: calc(100% / 3);
+}
+.contact-info i{
+    color: red;
+    margin-right: 5px;
+}
+.extra-offer{
+    background-color:var(--main-color) ;
+    border-left: 8px solid #ccc;
+    padding: 40px 10px;
+    color: #ccc;
+}
+.extra-offer i{
+background-color: #f76301;
+padding: 4px 8px;
+margin-right: 8px;
+}
+
+/* start hotel */
+.hotels-location{
+    display: flex;
+    width: 100%;
+}
+.hotels-location .first-img{
+width: 49%;
+margin-right: 1%;
+height: 100%;
+position: relative;
+}
+.hotels-location .first-img img{
+    width: 100%;
+    height: 100%;
+}
+.hotels-location .first-img span{
+ position: absolute;
+ bottom: 0;
+  left: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: white;
+   z-index: 2;
+}
+.img-hotel{
+    width: 50%;
+    position: relative;
+    
+
+}
+.img-hotel img{
+width: 48%;
+margin-bottom: 1%;
+margin-right: 1%;
+height: 48%;
+}
+.img-hotel .hotel-name{
+    position: relative;
+    display: inline;
+    height: 100%;
+}
+.img-hotel .hotel-name h3{
+    position: absolute;
+display: inline;
+z-index: 2;
+left: 10%;
+bottom: 15%;
+color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* end hotel  */
+/* start best offer */
+.best-offer{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    padding: 40px 0 30px 20px;
+}
+.best-offer:hover{
+    opacity: 1;
+}
+
+.best-offer form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.best-offer form input[type="email"]{
+width: 95%;
+height: 30px;
+padding: 0;margin: 0;
+border: 1px solid ;
+border-radius: 2px;
+}
+.best-offer form input[type="submit"]{
+    background-color: var(--main-color);
+    margin-top: 20px;
+    width: 100px;
+    border: 1px solid var(--main-color);
+    color: white;
+}
+
+/* end oofer */
+/* start contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact h2,
+.contact p{
+   margin-top: 5px;
+    font-weight: bold;
+
+}
+.contact .contact-info{
+    display: flex;
+flex-direction: column;
+text-align: start;
+margin-top: 0;
+}
+
+.contact .contact-info i{
+    margin: 4px 10px 0 0;
+}
+.contact  input:not([type="submit"]){
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.contact  input[type="submit"]{
+    background-color: black;
+    color: #ccc;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* end contact-us */
+.footer{
+display: flex;
+flex-direction: column;
+    background-color: black;
+    color: #ccc;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 200px;
+}
+.footer a{
+    color: #ccc;
+}
