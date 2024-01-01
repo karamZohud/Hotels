@@ -33,6 +33,7 @@ font-weight: bold;
 .Head-navbar .links{
     position: relative;
 width: 100%;
+cursor: pointer;
 }
 .Head-navbar .links ul{
     position: relative;
@@ -48,9 +49,9 @@ width: 100%;
 .Head-navbar .links .aLinks{
     text-decoration: none;
     color: black;
-    display: flex;
+   
 width: 100px;
-height: 50px;
+height: 50px; display: flex;
 align-items: center;
 justify-content: center;
 background-color: #fff;
@@ -68,11 +69,46 @@ background-color: #fff;
 .Head-navbar .links .aLinks:hover{
     background-color:rgb(100, 100, 100);
 }
+@media(max-width:991px){
+
+
+
+
+}
+@media(max-width:600px){
+    .Head-navbar{
+        flex-direction: column;
+    }
+
+    .Head-navbar .links ul{
+    flex-direction: column;
+    width: 100%;
+    }
+    .Head-navbar .links ul li:last-child{
+        position: relative;
+    }
+    .Head-navbar .links ul .aLinks,
+    .Head-navbar .links ul li:last-child .aLinks
+    {
+        width: 100%;
+    }
+    .Head-navbar .logo{
+   position: relative;
+   padding: 20px 0 20px 0;
+    width: 100%;
+    
+    height: 50px;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+}
 
 /* end header navbar */
 .container{
     margin: auto auto 50px auto;
-    width: 1270px;
+    width: 95%
 
 
 }
@@ -87,9 +123,6 @@ background-size: cover;
 .landing-page .person-info{
     position: absolute;
     background-color: white;
-   
-    border: 1px solid ;
-   
     display: flex;
     flex-direction: column;
     top: 50%;
@@ -128,6 +161,27 @@ width: 100%;
 display: flex;
 flex-direction: column;
 margin-left: 20px;
+margin-right: 20px;
+}
+
+@media (max-width:700px) {
+    .landing-page{
+        width: 100%;
+    }
+    .landing-page .person-info {
+        display: block;
+       left: 50%;
+       top: 75%;
+       transform: translate(-50%,-50%);
+
+    }
+    .check{
+        flex-direction: column;
+        margin: 0;
+    }
+    .check .check-in{
+        margin-bottom: 20px;
+    }
 }
  input{
 
@@ -172,29 +226,50 @@ form .search{
     background-color: #ccc;
  }
 
+
  /* rooms start */
-.rooms-info{
+.rooms-label{
     display: flex;
     width: 100%;
     margin-top: 20px;
 }
-.rooms-info i{
+.rooms-label i{
     margin-right: 5px;
 }
-.rooms-info .check-in,
-.rooms-info .check-out{
+.rooms-label input{
+    position: relative;
+    width: 100%;
+}
+.rooms-label .check-in,
+.rooms-label .check-out{
     display: flex;
+    width: 100%;
 flex-direction: column;
     margin-right: 20px;
 }
-.rooms-info .search input{
+.rooms-label .search{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.rooms-label .search input{
     background-color: black;
  color: #ccc;
- width: 120px;
+ width: 100%;
+ height: 32px;
  cursor: pointer;
 }
  
-
+@media (max-width:575px) {
+    .rooms-label{
+    flex-direction: column;
+    }
+    .rooms-label .check-in,
+    .rooms-label .check-out{
+        margin-bottom: 10px;
+    }
+    
+}
 .room-cards{
 width: 100%;
 display: flex;
@@ -221,6 +296,15 @@ margin-top: 30px;
   color: #ccc;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+@media (max-width:575px){
+.room-cards{
+flex-direction: column;
+}
+.room-cards .room{
+    width: 100%;
+    margin-bottom: 20px;
+}
 }
 body input:hover{
 background-color: #ccc;
@@ -253,7 +337,24 @@ width: 100%;
 .about .about-info i{
    margin-right: 2px;
 }
-
+@media (max-width:575px) {
+    .about{
+        flex-direction: column;
+    }
+    .about .about-info{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+@media (max-width:991px) {
+    .about{
+        flex-direction: column;
+    }
+    .about .about-info{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
 .container .contact-info{
     display: flex;
     width: 100%;
@@ -313,6 +414,16 @@ width: 48%;
 margin-bottom: 1%;
 margin-right: 1%;
 height: 48%;
+}
+@media (max-width:575px) {
+   .hotels-location{
+    flex-direction: column;
+    width: 100%;
+   }
+   .hotels-location .first-img,
+   .hotels-location .img-hotel{
+    width: 100%;
+   }
 }
 .img-hotel .hotel-name{
     position: relative;
@@ -386,6 +497,11 @@ margin-top: 0;
 .contact .contact-info i{
     margin: 4px 10px 0 0;
 }
+@media (max-width:575px) {
+    .contact-info span{
+        width: 100%;
+    }
+}
 .contact  input:not([type="submit"]){
     width: 100%;
     height: 40px;
@@ -411,4 +527,24 @@ flex-direction: column;
 }
 .footer a{
     color: #ccc;
+}
+
+
+@media (min-width:576px){/*small devices =>lansScape phone*/
+    container{
+        max-width:540px ;} 
+
+
+}
+@media (min-width:768px){/*medium devices =>Tablets */
+    container{
+        max-width:720px ;} 
+}
+@media (min-width:992px){/*desktop devices */
+    container{
+        max-width:960px ;} 
+}
+@media (min-width:1200px){/*Large Screen */
+    container{
+        max-width:1140px ;} 
 }
